@@ -1838,6 +1838,7 @@ span{
 }
 .main-footer .link-widget li a:before,
 .main-footer .service-widget li a:before{
+  display: none;
   position: absolute;
   content: "\f105";
   font-size: 14px;
