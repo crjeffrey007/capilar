@@ -2767,3 +2767,47 @@ textarea:focus{
   height: 45px;
   margin-bottom: 20px;
 }
+
+.footer-social {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; /* Alinea los íconos a la izquierda */
+}
+
+.footer-social li {
+    margin-right: 15px; /* Espacio entre los íconos */
+}
+
+.footer-social li a {
+    display: inline-block;
+    color: #fff; /* Ajusta el color según tu diseño */
+    font-size: 18px; /* Tamaño del ícono */
+    transition: color 0.3s;
+}
+
+.footer-social li a:hover {
+    color: #ff9800; /* Color al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+    .footer-social {
+        justify-content: center; /* Centra los íconos en pantallas pequeñas */
+    }
+
+    .footer-social li {
+        margin-right: 10px; /* Ajusta el espacio entre los íconos para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-social {
+        flex-direction: column; /* Cambia a disposición vertical en pantallas muy pequeñas */
+        align-items: center;
+    }
+
+    .footer-social li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Espacio entre íconos en disposición vertical */
+    }
+}
